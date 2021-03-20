@@ -62,7 +62,7 @@ public class DblLinkedList<E> {
 
         while (ptr != head) {
             System.out.println(ptr.data);
-            ptr = ptr.next
+            ptr = ptr.next;
         }
     }
 
