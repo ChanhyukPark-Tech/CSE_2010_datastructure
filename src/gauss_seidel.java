@@ -131,7 +131,7 @@ public class gauss_seidel
         M = new double[n][n+1];
         System.out.println("Enter the augmented matrix:");
 
-        for (int i = 0; i < n; i++) 
+        for (int i = 0; i < n; i++)
         {
             StringTokenizer strtk = new StringTokenizer(reader.readLine());
 
