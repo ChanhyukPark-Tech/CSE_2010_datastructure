@@ -9,7 +9,7 @@ public class BinarySum {
             return data[low];
         }else{
             int mid = (low + high) / 2;
-            return binarySum(data,low,mid0) + binarySum(data,mid+ 1 , high);
+            return binarySum(data,low,mid) + binarySum(data,mid+ 1 , high);
         }
     }
 }
