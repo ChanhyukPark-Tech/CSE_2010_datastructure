@@ -136,12 +136,17 @@ public class HeapPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
 
 
     public static void main(String[] args) {
-        Integer[] keys = {14,4,6,15,5,7,17,16,25,9,12,11,8,23,20};
-        Integer[] values = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
-        HeapPriorityQueue<Integer, Integer> heap = new HeapPriorityQueue(keys,values);
-        for(int i=0; i < heap.size(); i++){
-            System.out.print(heap.heap.get(i).getKey() + " ");
+//        Integer[] keys = {14,4,6,15,5,7,17,16,25,9,12,11,8,23,20};
+//        Integer[] values = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+//        HeapPriorityQueue<Integer, Integer> heap = new HeapPriorityQueue(keys,values);
+//        for(int i=0; i < heap.size(); i++){
+//            System.out.print(heap.heap.get(i).getKey() + " ");
+//        }
+        double sum = 0 ;
+        for(int i = 1; i< 999999; i++){
+            double ab = i / (double)Math.pow(2,i+1);
+            sum += ab;
         }
-
+        System.out.println(sum);
     }
 }
