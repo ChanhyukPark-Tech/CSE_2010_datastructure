@@ -2,8 +2,11 @@ package PriorityQueue;
 
 
 import java.util.Comparator;
-
-public class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
+/**
+ * The AbstractPriorityQueue class. This provides a nested PQEntry class that composes a key and a value into a single object
+ *, and support for managing a comparator. For convenience, we also provide an implementation of isEmpty based on a presumed size method
+ * */
+public abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
 
     protected static class PQEntry<K, V> implements Entry<K, V> {
         private K k;
@@ -50,9 +53,6 @@ public class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V> {
     }
 
     public boolean isEmpty(){
-        return size() == 0;
+        return size() == 0 ;
     }
-
-
-
 }
