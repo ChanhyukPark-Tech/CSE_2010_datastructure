@@ -26,7 +26,7 @@ class Key{
 //        System.out.println("high : " + high);
 //        System.out.println(0x0ffff);
         return (low + high) & 0x0ffff;
-    }
+     }
 }
 
 public class hashdemo{
