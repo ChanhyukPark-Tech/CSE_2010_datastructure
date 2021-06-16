@@ -20,7 +20,7 @@ class Key{
 
     @Override
     public int hashCode() {
-        int low = value & 0xffff;
+         int low = value & 0xffff;
         int high = value >>> 16 & 0x0ffff;
 //        System.out.println("low : " + low);
 //        System.out.println("high : " + high);
